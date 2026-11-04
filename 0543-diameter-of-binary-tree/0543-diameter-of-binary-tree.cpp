@@ -16,8 +16,8 @@ private:
         int l = dfs(root->left);
         int r = dfs(root->right);
 
-        res = std::max(res, l + r);
+        res = max(res, l + r);
 
-        return 1 + std::max(l, r);
+        return 1 + max(l, r);
     }    
 };
